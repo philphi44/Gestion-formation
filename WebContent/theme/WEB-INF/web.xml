@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <display-name>TPWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>ListeDesFormations</servlet-name>
+    <servlet-class>fr.eni_ecole.jee.servlet.ListeDesFormations</servlet-class>
+     <init-param>
+      <param-name>dbDriver</param-name>
+      <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbUrlConnexion</param-name>
+      <param-value>jdbc:sqlserver://localhost:1433;database=TPJavaEE_GestionFormations</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbUser</param-name>
+      <param-value>sa</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbPassword</param-name>
+      <param-value>Pa$$w0rd</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListeDesFormations</servlet-name>
+    <url-pattern>/ListeDesFormations</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AffichageMenu</display-name>
+    <servlet-name>AffichageMenu</servlet-name>
+    <servlet-class>fr.eni_ecole.jee.servlet.AffichageMenu</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AffichageMenu</servlet-name>
+    <url-pattern>/AffichageMenu</url-pattern>
+  </servlet-mapping>
+</web-app>

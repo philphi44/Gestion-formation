@@ -1,0 +1,137 @@
+* {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: white;	
+	color: rgb(51, 102, 102);
+}
+
+#page {
+	width: 1000px;
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+#entete {
+	border-bottom: solid;
+	height: 57px;
+}
+
+h2 {
+	font-size: 14px;
+	text-transform: capitalize;
+	padding-left: 10px;
+}
+
+.formation, .erreur {
+	border: 1px dotted;
+}
+
+.formation h2, #menu a:hover, .erreur h2 {
+	color: white;
+	background-color: rgb(51, 102, 102);
+}
+
+.formation p, li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#menu {
+	float: right;
+	border-style: solid;
+	border-width: 1px;
+	width: 200px;
+	margin-top: 20px;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left : 15px;
+}
+
+#menu a {
+	font-size: 14px;
+}
+
+#contenu {
+	margin-top: 20px;
+	width: 750px;
+	text-align: justify;
+	min-height: 150px;
+}
+
+form.connexion {
+	padding-bottom: 40px;
+}
+
+form.connexion label {
+	float: left;
+	min-width: 130px;
+	text-align: left;
+	font-weight: bold;
+	}
+
+.formationLibelle{
+	float: left;
+	min-width: 120px;
+	text-align: left;
+	font-weight: bold;
+	}
+
+.formationDate{
+	min-width: 100px;
+	text-align: left;
+	}
+
+.formLabel{
+	float: left;
+	min-width: 200px;
+	text-align: left;
+	font-weight: bold;
+	}
+
+.champtexte {
+	border-style: solid;
+}
+
+form.connexion > .bloc_identifiant, form.connexion > .bloc_motdepasse {
+	padding-bottom: 5px;
+}
+	
+.nom, .prenom, .login {
+	float: left;
+	text-align: left;
+
+}
+
+.nom {
+	min-width: 120px;
+	font-weight: bold;
+}
+.prenom {
+	min-width: 85px;
+	font-weight: bold;
+}
+
+.login {
+	min-width: 175px;
+}
+
+#seconnecter {
+	margin-left: 100px;
+}
+	
+#pieddepage {
+	width: 800px;
+	text-align: center;
+	font-size: 10px;
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top: 1px dashed;
+}
+
+#pieddepage a {
+	text-decoration: none;
+}
+
+#pieddepage a:hover {
+	text-decoration: underline;
+}
